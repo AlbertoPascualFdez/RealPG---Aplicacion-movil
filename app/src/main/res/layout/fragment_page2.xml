@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<!--<ScrollView
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">-->
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".ui.main.Page2">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addActivityButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:clickable="true"
+        android:src="@drawable/add_icon_round_white"
+        app:backgroundTint="@color/primary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:tint="@color/white" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <Button
+                    android:id="@+id/activatePanel1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/greenSecondary"
+                    android:text="@string/Bienestar"
+                    android:textAlignment="textStart"
+                    app:icon="@drawable/arrow_forward"
+                    app:iconGravity="start"
+                    app:iconSize="20dp" />
+
+                <LinearLayout
+                    android:id="@+id/panel1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/activatePanel2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/greenSecondary"
+                    android:text="@string/Casa"
+                    android:textAlignment="textStart"
+                    app:icon="@drawable/arrow_forward"
+                    app:iconSize="20dp" />
+
+                <LinearLayout
+                    android:id="@+id/panel2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/activatePanel3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/greenSecondary"
+                    android:text="@string/Deporte"
+                    android:textAlignment="textStart"
+                    app:icon="@drawable/arrow_forward"
+                    app:iconSize="20dp" />
+
+                <LinearLayout
+                    android:id="@+id/panel3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/activatePanel4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/greenSecondary"
+                    android:text="@string/Estudios"
+                    android:textAlignment="textStart"
+                    app:icon="@drawable/arrow_forward"
+                    app:iconSize="20dp" />
+
+                <LinearLayout
+                    android:id="@+id/panel4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/activatePanel5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/greenSecondary"
+                    android:text="@string/Ocio"
+                    android:textAlignment="textStart"
+                    app:icon="@drawable/arrow_forward"
+                    app:iconSize="20dp" />
+
+                <LinearLayout
+                    android:id="@+id/panel5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/activatePanel6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/greenSecondary"
+                    android:text="@string/Otros"
+                    android:textAlignment="textStart"
+                    app:icon="@drawable/arrow_forward"
+                    app:iconSize="20dp" />
+
+                <LinearLayout
+                    android:id="@+id/panel6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/activatePanel7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/greenSecondary"
+                    android:text="@string/Proyectos"
+                    android:textAlignment="textStart"
+                    app:icon="@drawable/arrow_forward"
+                    app:iconSize="20dp" />
+
+                <LinearLayout
+                    android:id="@+id/panel7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/activatePanel8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/greenSecondary"
+                    android:text="@string/Trabajo"
+                    android:textAlignment="textStart"
+                    app:icon="@drawable/arrow_forward"
+                    app:iconSize="20dp" />
+
+                <LinearLayout
+                    android:id="@+id/panel8"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/activatePanel9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/greenSecondary"
+                    android:text="@string/Viajes"
+                    android:textAlignment="textStart"
+                    app:icon="@drawable/arrow_forward"
+                    app:iconSize="20dp" />
+
+                <LinearLayout
+                    android:id="@+id/panel9"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
